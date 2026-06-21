@@ -7,6 +7,9 @@ for (let x=0; x<16; x++){
         let t = document.createElement("div");
         t.classList.toggle("element");
         t.setAttribute("style","height:40px; width:40px; border:5px solid black; ");
+        t.addEventListener("mouseover", function(event){
+            t.style.backgroundColor = "green";
+        })
         row.append(t);
     }
     container.append(row);
